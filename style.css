@@ -12,6 +12,7 @@ body {
 
 .heading {
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
 }
 
 button {
@@ -29,6 +30,10 @@ button:hover {
     color: white;
 }
 
+.logo {
+    width: 125px;
+}
+
 .socials div {
     cursor: pointer
 }
@@ -36,4 +41,19 @@ button:hover {
 .socials div:hover {
     border-color: hsl(300, 69%, 71%);
     color: hsl(300, 69%, 71%);
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    body {
+        background-image: url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: 18px;
+        background-attachment: fixed;
+    }
+    .logo {
+        width: 300px;
+    }
 }
